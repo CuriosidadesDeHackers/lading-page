@@ -1,0 +1,35 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const skillItems = document.querySelectorAll('.skill-item');
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popup-title');
+    const popupText = document.getElementById('popup-text');
+    const closeButton = document.querySelector('.close-button');
+
+    // Datos del popup para cada skill
+    const skillTexts = {
+        "Curioso": "- Pentesting. \n- .\n - .",
+        "Pentesting": " - Pruebas de penetración.\n  - Exploitación de fallos de seguridad.\n  - Análisis de seguridad en APIs.\n - Técnicas de evasión y bypass.",
+        "Bug Bounty": " - SQL Injection (SQLi).\n - Cross-Site Scripting (XSS).\n - Insecure Direct Object References (IDOR).\n - XML External Entity (XXE) Injection.\n - Broken Access Control.\n - Cross-Site Request Forgery (CSRF).\n - Command Injection.\n - Local File Inclusion (LFI).\n - Remote File Inclusion (RFI).\n - Clickjacking.\n - Privilege Escalation.\n - Unvalidated Redirects and Forwards.\n - Denial of Service (DoS).\n - Information Disclosure (File Disclosure, Error Messages).\n - Sensitive Data Exposure.\n - Cookie Injection/Manipulation.\n - Session Fixation.\n - Mass Assignment Vulnerabilities.\n - Unsecured APIs.\n - Race Conditions.\n - Password Strength & Complexity.\n - HTTP Response Splitting.\n - Subdomain Takeover.\n - Open Redirect.\n - Cache Poisoning.\n - JSON Web Token (JWT) Manipulation.\n - Broken Cryptography.\n - Cross-Origin Resource Sharing (CORS) Misconfigurations. "
+    };
+    
+    
+
+    skillItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            const skillTitle = this.getAttribute('data-skill');
+            popupTitle.textContent = skillTitle;
+            popupText.textContent = skillTexts[skillTitle] || "No hay información adicional disponible.";
+            popup.style.display = 'flex';
+        });
+    });
+
+    closeButton.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
