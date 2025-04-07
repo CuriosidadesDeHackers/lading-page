@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curioso amante de la ciberseguriad">
+    <title>Curiosidades De Hackers</title>
+    <link rel="icon" href="https://curiosidadesdehackers.com/wp-content/uploads/2024/05/2023-07-07_18-07-removebg-preview-1-244x300.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para los botones de redes sociales */
+        .social-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-buttons a {
+            font-size: 1.5em; /* Tamaño más pequeño */
+            color: #fff;
+            background-color: #2d3037; /* Fondo de los botones */
+            text-decoration: none;
+            padding: 15px; /* Ajustado el tamaño del padding */
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        /* Colores específicos para cada red social */
+        .social-buttons a.fa-youtube {
+            background-color: #FF0000; /* Rojo de YouTube */
+        }
+
+        .social-buttons a.fa-telegram {
+            background-color: #0088cc; /* Azul de Telegram */
+        }
+
+        .social-buttons a.fa-discord {
+            background-color: #7289da; /* Azul de Discord */
+        }
+
+        .social-buttons a.fa-twitter {
+            background-color: #1d9bf0; /* Azul de X (Twitter) */
+        }
+
+        .social-buttons a.fa-linkedin {
+            background-color: #0077b5; /* Azul de LinkedIn */
+        }
+
+        .social-buttons a.fa-instagram {
+            background-color: #e4405f; /* Rosa de Instagram */
+        }
+
+        .social-buttons a.fa-github {
+            background-color: #333; /* Gris oscuro de GitHub */
+        }
+
+        .social-buttons a:hover {
+            background-color: #007BFF; /* Color al pasar el ratón */
+            color: white;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #808080; /* Fondo gris */
+            color: white; /* Letras blancas */
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white; /* Letras blancas en los enlaces */
+            font-size: 18px;
+            padding: 10px;
+            background-color: #333; /* Fondo oscuro para los botones */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #555; /* Cambio de color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Video de fondo -->
+    <section class="principal">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://curiosidadesdehackers.com/"> Web</a></li>
+                    <li><a href="https://thehackerslabs.com/">The Hackers Labs</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <video autoplay muted loop id="bg-video" playsinline>
+            <source src="images/si.mp4" type="video/mp4">
+            <source src="images/cdh.png" type="video/webm">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <div class="principal-contenido">
+            <h1>Hola, soy Manuel Martínez</h1>
+            <h2>Un curioso amante de la ciberseguriad y bug bounty hunter.</h2>
+            <p id="dynamic-text">Auditorías de ciberseguridad.</p>
+            <a href="mailto:info@curiosidadesdehackers.com" class="cta-button">Contactar</a>
+        </div>
+
+    
+    </section>
+
+    </div>
+
+    <section id="skills">
+        <h2>Sobre mi</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="Curioso">
+                <h3>Curioso </h3>
+                <p>La curiosidad es un deseo de conocimiento y motivación para buscar continuamente nueva información.</p>
+                <a href="https://www.curiosidadesdehackers.com/" class="cta-button">Más información</a>
+            </div>
+            <div class="skill-item" data-skill="Pentesting">
+                <h3>Pentesting</h3>
+                <p>Evaluación de la seguridad de un sistema  buscando vulnerabilidades y explotándolas para obtener acceso. Documentacion de los hallazgos y recomendaciones para mejorar la seguridad.</p>
+                <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" class="cta-button">Más información</a>
+            </div>
+            <div class="skill-item" data-skill="Bug Bounty">
+                <h3>Bug Bounty</h3>
+                <p>Hunter en programas públicos y privados. Evaluación de sistemas en busca de vulnerabilidades mediante pruebas controladas, reportando los hallazgos a las empresas para que las corrijan. </p>
+                <a href="https://bugcrowd.com/CuriosidadesDeHackers" class="cta-button">Más información</a>
+            
+            </div>
+    </section>
+    
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+ 
+
+    <section id="seccion-galeria">
+        <h2>Empresas que he vulnerado y ayudado en programas de Bug Bounty</h2>
+        <div class="image-gallery">
+
+            </a>
+            <a href="" target="_blank">
+                <img src="images\nestle.png" alt="Bash">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/tesla.jpg" alt="Kali Linux">
+            </a>
+
+            <a href="" target="_blank">
+                <img src="images/telefonica.jpg" alt="Seguridad">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/snapchat.png" alt="Java">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/just.png" alt="SQL">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/indeed.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/airbnb.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adobe.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/amazon.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adp.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/usgs.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/nasa.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/dod.jpg" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/ca.png" alt="Linux Tux">
+            </a>
+
+
+            <a href="" target="_blank">
+                <img src="images/harvard.png" alt="HTML">
+            </a>
+
+            <a href="" target="_blank">
+                <img src="images/fis.jpeg" alt="Python">
+            </a>
+            <a href="" target="_blank">
+                <img src="images\nestle.png" alt="Bash">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/tesla.jpg" alt="Kali Linux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/snapchat.png" alt="JavaScript">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/telefonica.jpg" alt="Seguridad">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/glovo.png" alt="Java">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/just.png" alt="SQL">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/indeed.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/airbnb.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adobe.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/amazon.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adp.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/usgs.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/nasa.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/dod.jpg" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/ca.png" alt="Linux Tux">
+            </a>
+
+
+            </a>
+
+            <a href="" target="_blank">
+                <img src="images/harvard.png" alt="HTML">
+            </a>
+
+            <a href="" target="_blank">
+                <img src="images/fis.jpeg" alt="Python">
+            </a>
+            <a href="" target="_blank">
+                <img src="images\nestle.png" alt="Bash">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/tesla.jpg" alt="Kali Linux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/snapchat.png" alt="JavaScript">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/telefonica.jpg" alt="Seguridad">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/snapchat.png" alt="Java">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/just.png" alt="SQL">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/indeed.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/airbnb.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adobe.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/amazon.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/adp.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/usgs.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/nasa.png" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/dod.jpg" alt="Linux Tux">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/ca.png" alt="Linux Tux">
+            </a>
+        </div>
+    </section>
+    
+
+    <section class="videos">
+        <h2>Administraciones y organizaciones públicas que he vulnerado y ayudado</h2>
+        <div>
+            <div class="video">
+                <p class="video-title">Comunidad De Madrid</p>
+                <a href="https://www.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-madrid-comunidaddemadrid-activity-7299142200989212673-1kTi" target="_blank">
+                    <img src="images/madrid.png" alt="Comunidad De Madrid">
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Dirección General de Tráfico</p>
+                <a href="" target="_blank">
+                    <img src="images/dgt.png" alt="Dirección General de Tráfico" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Junta de Andalucía</p>
+                <a href="https://www.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-andalucaeda-ciberseguridad-activity-7290809215621754881-x8i5" target="_blank">
+                    <img src="images/andalucia.png" alt="Junta de Andaluía" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ayuntamiento de Huelva</p>
+                <a href="https://www.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-andalucia-huelva-activity-7296212718900948992-N4E9" target="_blank">
+                    <img src="images/huelva.png" alt="Ayuntamietno de Huelva" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ayuntamiento de Granada</p>
+                <a href="https://www.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-granada-ciberseguridad-activity-7272689179778551809-NKeG" target="_blank">
+                    <img src="images/granada.png" alt="Ayuntamiento de Granada" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Diputación de Granada</p>
+                <a href="" target="_blank">
+                    <img src="images/dipu granada.png" alt="Diputación de Granada" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Generalidad de Cataluña</p>
+                <a href="" target="_blank">
+                    <img src="images/catalunya.png" alt="Generalidad de Cataluña" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Universidad Carlos III</p>
+                <a href="https://www.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-universidad-madrid-activity-7305300071355416576-ZONp" target="_blank">
+                    <img src="images\uc3m.png" alt="Universidad Carlos III de Madrid" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ministerio de Sanidad</p>
+                <a href="https://es.linkedin.com/posts/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289_vulnerabilidad-ministeriodesanidad-gobiernodeespa%C3%B1a-activity-7308882919169687552-MThN" target="_blank">
+                    <img src="images/sanitad.png" alt="Ministerio de Sanidad" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Diputación de Málaga</p>
+                <a href="" target="_blank">
+                    <img src="images/dipu malaga.png" alt="Diputación de Málaga" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">El Pais</p>
+                <a href="" target="_blank">
+                    <img src="images/elpais.png" alt="El Pais" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Comisiones Obreras</p>
+                <a href="" target="_blank">
+                    <img src="images/ccoo.png" alt="Comisiones Obreras" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Universidad de Granada</p>
+                <a href="" target="_blank">
+                    <img src="images/uni-granada.png" alt="Universidad de Granada" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Universidad de Barcelona</p>
+                <a href="" target="_blank">
+                    <img src="images/unibarcelona.png" alt="Universidad de Barcelona" />
+                </a>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <h3>The Hackers Labs</h3>
+                <p>He creado una plataforma de CTFs(laboratorios vulnerables) y retos de ciberseguridad donde se explora el fascinante mundo de la ciberseguridad a través de CTFs y retos desde: Seguridad Ofensiva, Defensiva, Active Directory, Forense, Android, Wireless, etc...</p>
+                <br>
+                <a href="https://thehackerslabs.com/" target="_blank">
+                    <img src="images/thl.png" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Curiosidades De Hackers </h3>
+                <p>Escribo y comparto artículos, resúmenes, proyectos y nuevas tecnologías en el ámbito de la ciberseguridad en curiosidadesdehackers.com con el fin de ayudar a usuarios a tener un lugar en el que acudir para aprender de forma gratuita.</p>
+                <br>
+                <a href="https://curiosidadesdehackers.com/" target="_blank">
+                    <img src="images/cdh2.png" alt="Proyecto 1" class="project-img">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="referencias-compañeros">
+        <h2>Referencias de compañeros</h2>
+        <div class="opiniones-container">
+            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
+                <img src="images/joel.jpg" alt="Foto de compañero 1" class="foto-compañero">
+                <h3>Joel Caro</h3>
+                <p>"Manuel es una persona excepcional con una mente brillante y curiosa. Siempre dispuesto a compartir sus conocimientos y ayudarte en todo lo que necesites. Es un luchador, apasionado y estudioso de la Ciberseguridad incansable en su afán de evolucionar y emprender. Probablemente de los mejores hackers de España, como mínimo. Gracias por tu sabiduría y tus enseñanzas."</p>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
+                <img src="images/oscar.jpg" alt="Foto de compañero 1" class="foto-compañero">
+                <h3>Oscar Sanchez Perez</h3>
+                <p>“Manuel fue quien me introdujo en este mundo, despertando en mí un interés que no ha dejado de crecer. Su conocimiento, paciencia y disposición para compartir lo que sabe con los demás son dignos de admirar.
+                   Lo que más valoro de él es su capacidad para explicar conceptos complejos de manera sencilla, su pasión por la materia y su actitud siempre colaborativa. No solo es un gran profesional, sino también un mentor excepcional. Aprender de él es un proceso continuo, cada día aporta nuevos conocimientos y perspectivas.
+                    Además, desde que lo conozco, ha fundado Curiosidades De Hackers, The Hackers Labs y Bug Bounty Labs, proyectos que reflejan su compromiso con la comunidad, su incansable búsqueda por seguir aprendiendo y compartiendo. Es un auténtico crack.
+                    Sin duda, tenerlo en tu equipo es garantía de crecimiento, aprendizaje y una mentalidad colaborativa que marca la diferencia.”</p>
+            </a>
+            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
+                <img src="images/mario.jpg" alt="Foto de compañero 1" class="foto-compañero">
+                <h3>
+                    Mario Álvarez Fernández</h3>
+                <p>“Tengo el placer de colaborar con Manuel en la docencia en materia de ciberseguridad y en la creación de laboratorios vulnerables para las plataformas thehackerslabs.es y dockerlabs.es, tanto en formato Docker como en máquinas virtuales, y puedo destacar su profesionalidad, originalidad y creatividad en todos los proyectos. Manuel siempre aporta ideas innovadoras, enfrentando cada reto con un enfoque único y resolviendo problemas con gran eficiencia.
+
+                    Además, es un compañero excelente, siempre dispuesto a colaborar y compartir su conocimiento. Recomiendo a Manuel sin dudarlo para cualquier oportunidad, ya que su talento y ética de trabajo son excepcionales.”</p>
+            </a>
+           
+            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
+                <img src="images/david.jpg" alt="Foto de compañero 1" class="foto-compañero">
+                <h3>
+                    David Ortega</h3>
+                <p>“Tengo el privilegio de trabajar junto a Manuel como cofundador de TheHackersLabs, donde hemos desarrollado proyectos innovadores y desafiantes en el ámbito de la ciberseguridad. Manuel se distingue por su visión estratégica, su capacidad de liderazgo y su incansable dedicación al proyecto. Juntos hemos impulsado la creación de laboratorios vulnerables y entornos de aprendizaje diseñados para la formación de profesionales y entusiastas de la ciberseguridad.
+
+                    Manuel es un profesional comprometido, con un enfoque práctico y creativo para resolver problemas, siempre dispuesto a explorar nuevas ideas y a compartir su vasto conocimiento con el equipo. Su capacidad para motivar y dirigir hace que cualquier proyecto en el que participe tenga una sólida base de éxito.
+                    
+                    Es un placer contar con Manuel como socio y colaborador, y no tengo dudas de que seguirá logrando grandes cosas en el campo de la ciberseguridad”</p>
+            </a>
+            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
+                <img src="images/rafa.jpg" alt="Foto de compañero 1" class="foto-compañero">
+                <h3>Rafa Lopez</h3>
+                <p>“La mejor decisión para el proyecto fue poder disponer de Manuel. Su entusiasmo y ganas de hacer por la comunidad se reflejan en los éxitos que estamos teniendo.
+
+                    Una gran capacidad técnica junto con un gran trabajo de equipo que hacen de él un profesional de un altísimo valor.”</p>
+            </a>
+
+        </div>
+  
+    </section>
+
+
+      
+
+      
+
+    <section id="social-media">
+        <h3>Puedes seguirme en:</h3>
+        <div class="social-buttons">
+            <a href="https://www.youtube.com/channel/UCyFq3OKciq3VMNpTmzV1XTA" target="_blank" class="fab fa-youtube"></a>
+            <a href="https://t.me/CuriosidadesDeHackers" target="_blank" class="fab fa-telegram"></a>
+            <a href="https://twitter.com/HackersCuriosos" target="_blank" class="fab fa-x-twitter"></a> 
+            <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/curiosidadesdehackers/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://github.com/CuriosidadesDeHackers" target="_blank" class="fab fa-github"></a>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-start">
+                    <p> © CuriosidadesDeHackers 2023-2025.</p>
+                </div>
+                             
+			            
+		            </p>
+                </div>
+            </div>
+        </div>
+        <!-- Efecto de olas -->
+        <div class="wave-container">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/ver-mas.js"></script>
+
+</body>
+</html>
