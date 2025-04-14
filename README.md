@@ -1,6 +1,6 @@
 # 🌍 Landing Page Colaborativa
 
-Bienvenido a la **Landing Page Colaborativa** de El Pinguino de Mario. 
+Bienvenido a la **Landing Page Colaborativa** de [El Pinguino de Mario](https://www.youtube.com/@ElPinguinoDeMario?cbrd=1). 
 
 ---
 
