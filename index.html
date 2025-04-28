@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Curioso amante de la ciberseguriad">
+    <meta property="og:title" content="PoC Curiosidades De Hackers">
+    <meta property="og:description" content="Curioso amante de la ciberseguriad">
+    <meta property="og:image" content="https://curiosidadesdehackers.com/wp-content/uploads/2024/02/cropped-2023-07-07_18-07-32x32.png">
+    <meta property="og:url" content="https://poc.curiosidadesdehackers.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PoC Curiosidades De Hackers">
+    <meta name="twitter:description" content="Curioso amante de la ciberseguriad">
+    <meta name="twitter:image" content="https://curiosidadesdehackers.com/wp-content/uploads/2024/02/cropped-2023-07-07_18-07-32x32.png">
+    <meta charset="UTF-8">
     <title>Curiosidades De Hackers</title>
-    <link rel="icon" href="https://curiosidadesdehackers.com/wp-content/uploads/2024/05/2023-07-07_18-07-removebg-preview-1-244x300.png" type="image/x-icon">
+    <link rel="icon" href="https://curiosidadesdehackers.com/wp-content/uploads/2024/02/cropped-2023-07-07_18-07-32x32.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,54 +25,92 @@
     <style>
         /* Estilos para los botones de redes sociales */
         .social-buttons {
-            margin-top: 20px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 10px;
+            padding: 0 10px;
+            max-width: 100%;
         }
 
         .social-buttons a {
-            font-size: 1.5em; /* Tamaño más pequeño */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
             color: #fff;
-            background-color: #2d3037; /* Fondo de los botones */
             text-decoration: none;
-            padding: 15px; /* Ajustado el tamaño del padding */
             border-radius: 50%;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        /* Tamaños responsivos para botones sociales */
+        @media (min-width: 480px) {
+            .social-buttons a {
+                width: 44px;
+                height: 44px;
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .social-buttons a {
+                width: 48px;
+                height: 48px;
+                font-size: 22px;
+            }
         }
 
         /* Colores específicos para cada red social */
-        .social-buttons a.fa-youtube {
-            background-color: #FF0000; /* Rojo de YouTube */
-        }
-
-        .social-buttons a.fa-telegram {
-            background-color: #0088cc; /* Azul de Telegram */
-        }
-
-        .social-buttons a.fa-discord {
-            background-color: #7289da; /* Azul de Discord */
-        }
-
-        .social-buttons a.fa-twitter {
-            background-color: #1d9bf0; /* Azul de X (Twitter) */
-        }
-
-        .social-buttons a.fa-linkedin {
-            background-color: #0077b5; /* Azul de LinkedIn */
-        }
-
+        .social-buttons a.fa-globe { background-color: #4CAF50; }
+        .social-buttons a.fa-youtube { background-color: #FF0000; }
+        .social-buttons a.fa-telegram { background-color: #0088cc; }
+        .social-buttons a.fa-x-twitter { background-color: #000000; }
+        .social-buttons a.fa-linkedin { background-color: #0077b5; }
         .social-buttons a.fa-instagram {
-            background-color: #e4405f; /* Rosa de Instagram */
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
         }
+        .social-buttons a.fa-github { background-color: #333; }
+        .social-buttons a.fa-tiktok { background-color: #000; }
 
-        .social-buttons a.fa-github {
-            background-color: #333; /* Gris oscuro de GitHub */
-        }
-
+        /* Efecto hover */
         .social-buttons a:hover {
-            background-color: #007BFF; /* Color al pasar el ratón */
-            color: white;
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ajustes para pantallas muy pequeñas */
+        @media (max-width: 360px) {
+            .social-buttons {
+                gap: 8px;
+            }
+            .social-buttons a {
+                width: 36px;
+                height: 36px;
+                font-size: 16px;
+            }
+        }
+
+        /* Estilos para el footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            color: #fff;
+            font-size: clamp(12px, 2vw, 14px);
+            border-top: 1px solid #009ee1;
+        }
+
+        /* Estilo para el botón de Ko-fi */
+        .kofi-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
         }
     </style>
     <style>
@@ -107,8 +155,8 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://curiosidadesdehackers.com/"> Web</a></li>
-                    <li><a href="https://thehackerslabs.com/">The Hackers Labs</a></li>
+                    <li><a href="https://curiosidadesdehackers.com/"> Web Principal</a></li>
+                    
 
                 </ul>
             </nav>
@@ -135,19 +183,16 @@
         <h2>Sobre mi</h2>
         <div class="skills-grid">
             <div class="skill-item" data-skill="Curioso">
-                <h3>Curioso </h3>
-                <p>La curiosidad es un deseo de conocimiento y motivación para buscar continuamente nueva información.</p>
-                <a href="https://www.curiosidadesdehackers.com/" class="cta-button">Más información</a>
+                <h3></h3>
+                <a href="https://www.curiosidadesdehackers.com/" class="cta-button">Web</a>
             </div>
             <div class="skill-item" data-skill="Pentesting">
-                <h3>Pentesting</h3>
-                <p>Evaluación de la seguridad de un sistema  buscando vulnerabilidades y explotándolas para obtener acceso. Documentacion de los hallazgos y recomendaciones para mejorar la seguridad.</p>
-                <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" class="cta-button">Más información</a>
+                <h3></h3>
+                <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" class="cta-button">Linkedin</a>
             </div>
             <div class="skill-item" data-skill="Bug Bounty">
-                <h3>Bug Bounty</h3>
-                <p>Hunter en programas públicos y privados. Evaluación de sistemas en busca de vulnerabilidades mediante pruebas controladas, reportando los hallazgos a las empresas para que las corrijan. </p>
-                <a href="https://bugcrowd.com/CuriosidadesDeHackers" class="cta-button">Más información</a>
+                <h3></h3>
+                <a href="https://bugcrowd.com/CuriosidadesDeHackers" class="cta-button">Bug Bounty</a>
             
             </div>
     </section>
@@ -413,6 +458,19 @@
                 </a>
             </div>
 
+            <div class="video">
+                <p class="video-title">I.C. Abogados de Granada</p>
+                <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" target="_blank">
+                    <img src="images/inta.png" alt="I.C. Abogados de Granada" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">I. Nacional de T. Aeroespacial</p>
+                <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" target="_blank">
+                    <img src="images/icagr.png" alt="I. Nacional de T. Aeroespacial" />
+                </a>
+            </div>
+
         </div>
     </section>
     
@@ -428,9 +486,9 @@
                 <br>
                 <a href="https://thehackerslabs.com/" target="_blank">
                     <img src="images/thl.png" alt="Proyecto 1" class="project-img">
-                </a>
-                          
+                </a>          
             </div>
+
             <div class="project-item">
                 <h3>Curiosidades De Hackers </h3>
                 <p>Escribo y comparto artículos, resúmenes, proyectos y nuevas tecnologías en el ámbito de la ciberseguridad en curiosidadesdehackers.com con el fin de ayudar a usuarios a tener un lugar en el que acudir para aprender de forma gratuita.</p>
@@ -443,53 +501,7 @@
         </div>
     </section>
 
-    <section id="referencias-compañeros">
-        <h2>Referencias de compañeros</h2>
-        <div class="opiniones-container">
-            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
-                <img src="images/joel.jpg" alt="Foto de compañero 1" class="foto-compañero">
-                <h3>Joel Caro</h3>
-                <p>"Manuel es una persona excepcional con una mente brillante y curiosa. Siempre dispuesto a compartir sus conocimientos y ayudarte en todo lo que necesites. Es un luchador, apasionado y estudioso de la Ciberseguridad incansable en su afán de evolucionar y emprender. Probablemente de los mejores hackers de España, como mínimo. Gracias por tu sabiduría y tus enseñanzas."</p>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
-                <img src="images/oscar.jpg" alt="Foto de compañero 1" class="foto-compañero">
-                <h3>Oscar Sanchez Perez</h3>
-                <p>“Manuel fue quien me introdujo en este mundo, despertando en mí un interés que no ha dejado de crecer. Su conocimiento, paciencia y disposición para compartir lo que sabe con los demás son dignos de admirar.
-                   Lo que más valoro de él es su capacidad para explicar conceptos complejos de manera sencilla, su pasión por la materia y su actitud siempre colaborativa. No solo es un gran profesional, sino también un mentor excepcional. Aprender de él es un proceso continuo, cada día aporta nuevos conocimientos y perspectivas.
-                    Además, desde que lo conozco, ha fundado Curiosidades De Hackers, The Hackers Labs y Bug Bounty Labs, proyectos que reflejan su compromiso con la comunidad, su incansable búsqueda por seguir aprendiendo y compartiendo. Es un auténtico crack.
-                    Sin duda, tenerlo en tu equipo es garantía de crecimiento, aprendizaje y una mentalidad colaborativa que marca la diferencia.”</p>
-            </a>
-            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
-                <img src="images/mario.jpg" alt="Foto de compañero 1" class="foto-compañero">
-                <h3>
-                    Mario Álvarez Fernández</h3>
-                <p>“Tengo el placer de colaborar con Manuel en la docencia en materia de ciberseguridad y en la creación de laboratorios vulnerables para las plataformas thehackerslabs.es y dockerlabs.es, tanto en formato Docker como en máquinas virtuales, y puedo destacar su profesionalidad, originalidad y creatividad en todos los proyectos. Manuel siempre aporta ideas innovadoras, enfrentando cada reto con un enfoque único y resolviendo problemas con gran eficiencia.
 
-                    Además, es un compañero excelente, siempre dispuesto a colaborar y compartir su conocimiento. Recomiendo a Manuel sin dudarlo para cualquier oportunidad, ya que su talento y ética de trabajo son excepcionales.”</p>
-            </a>
-           
-            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
-                <img src="images/david.jpg" alt="Foto de compañero 1" class="foto-compañero">
-                <h3>
-                    David Ortega</h3>
-                <p>“Tengo el privilegio de trabajar junto a Manuel como cofundador de TheHackersLabs, donde hemos desarrollado proyectos innovadores y desafiantes en el ámbito de la ciberseguridad. Manuel se distingue por su visión estratégica, su capacidad de liderazgo y su incansable dedicación al proyecto. Juntos hemos impulsado la creación de laboratorios vulnerables y entornos de aprendizaje diseñados para la formación de profesionales y entusiastas de la ciberseguridad.
-
-                    Manuel es un profesional comprometido, con un enfoque práctico y creativo para resolver problemas, siempre dispuesto a explorar nuevas ideas y a compartir su vasto conocimiento con el equipo. Su capacidad para motivar y dirigir hace que cualquier proyecto en el que participe tenga una sólida base de éxito.
-                    
-                    Es un placer contar con Manuel como socio y colaborador, y no tengo dudas de que seguirá logrando grandes cosas en el campo de la ciberseguridad”</p>
-            </a>
-            <a href="https://www.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289/" target="_blank" class="opinión">
-                <img src="images/rafa.jpg" alt="Foto de compañero 1" class="foto-compañero">
-                <h3>Rafa Lopez</h3>
-                <p>“La mejor decisión para el proyecto fue poder disponer de Manuel. Su entusiasmo y ganas de hacer por la comunidad se reflejan en los éxitos que estamos teniendo.
-
-                    Una gran capacidad técnica junto con un gran trabajo de equipo que hacen de él un profesional de un altísimo valor.”</p>
-            </a>
-
-        </div>
-  
-    </section>
 
 
       
@@ -499,13 +511,15 @@
     <section id="social-media">
         <h3>Puedes seguirme en:</h3>
         <div class="social-buttons">
-            <a href="https://www.youtube.com/channel/UCyFq3OKciq3VMNpTmzV1XTA" target="_blank" class="fab fa-youtube"></a>
-            <a href="https://t.me/CuriosidadesDeHackers" target="_blank" class="fab fa-telegram"></a>
-            <a href="https://twitter.com/HackersCuriosos" target="_blank" class="fab fa-x-twitter"></a> 
-            <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://www.instagram.com/curiosidadesdehackers/" target="_blank" class="fab fa-instagram"></a>
-            <a href="https://github.com/CuriosidadesDeHackers" target="_blank" class="fab fa-github"></a>
-    </div>
+            <a href="https://www.curiosidadesdehackers.com" target="_blank" class="fas fa-globe" title="Sitio Web"></a>
+            <a href="https://www.youtube.com/channel/UCyFq3OKciq3VMNpTmzV1XTA" target="_blank" class="fab fa-youtube" title="YouTube"></a>
+            <a href="https://t.me/CuriosidadesDeHackers" target="_blank" class="fab fa-telegram" title="Telegram"></a>
+            <a href="https://twitter.com/HackersCuriosos" target="_blank" class="fab fa-x-twitter" title="X (Twitter)"></a>
+            <a href="https://es.linkedin.com/in/manuel-mart%C3%ADnez-curiosidades-de-hackers-55b245289" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.instagram.com/curiosidadesdehackers/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+            <a href="https://github.com/CuriosidadesDeHackers" target="_blank" class="fab fa-github" title="GitHub"></a>
+            <a href="https://www.tiktok.com/@curiosidadesdehackers" target="_blank" class="fab fa-tiktok" title="TikTok"></a>
+        </div>
     </section>
     
     <footer>
@@ -526,6 +540,12 @@
             <div class="wave wave2"></div>
         </div>
     </footer>
+
+        <!-- Botón flotante de Ko-fi -->
+    <div class="kofi-button">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('¿Me apoyas?', '#009ee1', 'O4O3W3IIA');kofiwidget2.draw();</script>
+    </div>
     
     <script src="scripts/script.js"></script>
     <script src="scripts/popup.js"></script>
