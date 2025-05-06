@@ -47,7 +47,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
+    background-color: #ffee00;
     text-decoration: none;
     font-weight: bold;
 }
@@ -56,7 +57,7 @@ nav ul li a {
     position: relative;
     height: 100vh; /* La sección ocupe toda la altura de la pantalla */
     overflow: hidden; /* Evitamos el desbordamiento del contenido */
-    color: #fff;
+    color: #d62e2e;
     text-align: center;
 }
 
